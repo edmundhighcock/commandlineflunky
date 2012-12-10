@@ -16,10 +16,10 @@ Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "commandlineflunky"
   gem.homepage = "http://github.com/edmundhighcock/commandlineflunky"
-  gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "github@edmundhighcock.com"
+  gem.license = "GPLv3"
+  gem.summary = %Q{A library for quickly creating a command line program.}
+  gem.description = %Q{A library for quickly creating a command line program. Quickly create commands, options and a built in manual.}
+  gem.email = "edmundhighcock@sourceforge.net"
   gem.authors = ["Edmund Highcock"]
   # dependencies defined in Gemfile
 end
@@ -32,13 +32,13 @@ Rake::TestTask.new(:test) do |test|
   test.verbose = true
 end
 
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
-end
+#require 'rcov/rcovtask'
+#Rcov::RcovTask.new do |test|
+  ##test.libs << 'test'
+  ##test.pattern = 'test/**/test_*.rb'
+  ##test.verbose = true
+  ##test.rcov_opts << '--exclude "gems/*"'
+##end
 
 task :default => :test
 
